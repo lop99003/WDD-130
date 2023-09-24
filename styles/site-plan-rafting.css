@@ -1,0 +1,66 @@
+@font-face {
+    font-family: "Shadows Into Light Two";
+    src: url(https://fonts.google.com/specimen/Shadows+Into+Light+Two?query=shado);
+}
+
+@font-face {
+    font-family: "Nanum Pen Script";
+    src: url(https://fonts.google.com/specimen/Nanum+Pen+Script?query=nanum+pe);
+}
+
+:root {
+    --primary-color: #1C1F62
+    --secondary-color: #1E203F
+    --accent1-color: #A8AABA
+    --accent2-color: #E7EAE9
+
+    --heading-font: 'Shadows Into Light Two', Shadows Into Light Two;
+    --paragraph-font: 'Nanum Pen Script', Nanum Pen Script;
+
+    --nav-background-color: #1C1F62;
+    --nav-link-color: #1E203F;
+    --nav-hover-link-color: #A8AABA;
+    --nav-hover-background-color: #E7EAE9;
+}
+
+body {
+    font-family: var(--paragraph-font);
+    max-width: 960 px;
+    padding: 20 px; 
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+}
+
+header {
+    padding: 20px;
+    background-color: var(--accent1-color);
+}
+
+p {
+    padding: 25px;
+}
+
+nav {
+    background-color: var(--nav-background-color);
+    font-size: 1.2rem;
+    display: flex;
+}
+
+nav a {
+    display: block;
+    color: var(--nav-hover-link-color);
+    text-decoration: none;
+    padding: 1rem;
+}
+
+nav a:link, nav a:visited {
+    color: var(--nav-hover-link-color);
+}
+
+nav a:hover {
+    color: var(--nav-hover-background-color);
+    background-color: var(--nav-hover-background-color);
+}
