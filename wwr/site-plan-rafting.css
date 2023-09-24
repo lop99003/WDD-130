@@ -1,12 +1,10 @@
-@font-face {
-    font-family: "Shadows Into Light Two";
-    src: url(https://fonts.google.com/specimen/Shadows+Into+Light+Two?query=shado);
-}
+@import url(<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light+Two&display=swap" rel="stylesheet">);
 
-@font-face {
-    font-family: "Nanum Pen Script";
-    src: url(https://fonts.google.com/specimen/Nanum+Pen+Script?query=nanum+pe);
-}
+@import url(<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&family=Shadows+Into+Light+Two&display=swap" rel="stylesheet">);
 
 :root {
     --primary-color: #1C1F62
