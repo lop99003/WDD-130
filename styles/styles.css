@@ -1,9 +1,11 @@
+/* Reset some default styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Styles for the navigation bar */
 nav {
     background-color: steelblue;
     padding: 10px;
@@ -11,13 +13,13 @@ nav {
 
 nav a {
     color: white;
-    display:block;
-    padding: 20px
+    display: block;
+    padding: 20px;
 }
 
+/* Styles for the main content */
 h1 {
     color: steelblue;
-
 }
 
 img {
@@ -42,11 +44,10 @@ main img {
     float: right;
 }
 
-p {padding: 0;}
-
+/* Styles for the aside element */
 aside {
     width: 20rem;
-    border: 1px solid rgba(0,0,0,0.2); /* 1 */
+    border: 1px solid rgba(0, 0, 0, 0.2);
     background-color: #eee;
     color: #333;
     text-align: center;
@@ -67,15 +68,16 @@ aside h2 {
     margin: 0;
 }
 
+/* Styles for the footer */
 footer {
     margin-top: 1em;
     border-top: 1px solid #000;
     text-align: center;
 }
-/* Class Selectors */
+
+/* Styles for the .box class */
 .box {
-    margin: 1rem;
-    border: 1px solid rgba (0,0,0,.1);
+    border: 1px solid rgba(0, 0, 0, 0.1);
     padding: 1rem;
     background-color: #ddd;
     color: #000;
