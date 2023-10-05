@@ -8,7 +8,10 @@
 /* Styles for the navigation bar */
 nav {
     background-color: steelblue;
-    padding: 10px;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 nav a {
@@ -17,9 +20,16 @@ nav a {
     padding: 20px;
 }
 
+/* Styles for the header, .grid, and footer */
+header, .grid, footer {
+    max-width: 840px;
+    margin: 0 auto;
+}
+
 /* Styles for the main content */
 h1 {
     color: steelblue;
+    border-bottom: 1px solid steelblue; /* Add a bottom border */
 }
 
 img {
@@ -34,6 +44,18 @@ p {
     padding: 10px;
 }
 
+/* Styles for the header and footer */
+.container {
+    max-width: 840px;
+    margin: 0 auto;
+}
+
+header, footer {
+    max-width: 840px;
+    margin: 0 auto;
+}
+
+/* Styles for the main content area */
 main {
     max-width: 840px;
 }
@@ -68,13 +90,6 @@ aside h2 {
     margin: 0;
 }
 
-/* Styles for the footer */
-footer {
-    margin-top: 1em;
-    border-top: 1px solid #000;
-    text-align: center;
-}
-
 /* Styles for the .box class */
 .box {
     border: 1px solid rgba(0, 0, 0, 0.1);
@@ -82,3 +97,24 @@ footer {
     background-color: #ddd;
     color: #000;
 }
+
+/* Apply grid layout to .grid */
+.grid {
+    display: grid;
+    grid-template-columns: 20rem 1fr; /* Define two columns with specified widths */
+    grid-gap: 20px; /* Gap between columns */
+    align-items: center;
+}
+
+/* Position main and aside within the grid */
+main {
+    grid-column: 2/3; /* Main occupies the second column */
+    margin: 1rem;
+}
+
+aside {
+    grid-column: 1/2; /* Aside occupies the first column */
+    width: 20rem;
+    position: relative;
+}
+
