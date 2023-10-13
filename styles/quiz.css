@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&family=Shadows+Into+Light+Two&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Shadows Into Light Two, Nanum Pen Script, cursive;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+
+h1.checkmark::before {
+    content: '\2713'; /* Unicode checkmark character */
+    margin-right: 10px;
+    color: #00cc00; /* Green color for the checkmark */
+    font-size: 24px; /* Adjust the size as needed */
+}
+
+
+h1 {
+    background-color: navy;
+    color: white;
+    padding: 20px;
+}
+
+#quiz-form {
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.question {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    text-align: left;
+}
+
+input[type="text"],
+textarea,
+select,
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: navy;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #2185d0;
+}
